@@ -1,0 +1,28 @@
+export const textures = [
+  "https://cdn.cosmos.so/1cb13fd9-744a-46fe-95a3-4f724bce166c?format=jpeg",
+  "https://cdn.cosmos.so/7a4e7d35-5183-427a-ac17-f9030b7a14dc?format=jpeg",
+  "https://cdn.cosmos.so/f98c7a9b-7a91-46a1-b24a-2c692bb80213?format=jpeg",
+  "https://cdn.cosmos.so/f327392c-311f-4f6a-a8d0-65d97da9c74c?format=jpeg",
+  "https://cdn.cosmos.so/ed83bd18-1dc5-4a34-8e97-4edfdf510280?format=jpeg",
+  "https://cdn.cosmos.so/276e4c41-cfe4-44ab-8db1-2f83b59a562e?format=jpeg",
+  "https://cdn.cosmos.so/6cb00c29-264d-4949-b909-ae3556974214?format=jpeg",
+  "https://cdn.cosmos.so/f4c5d3b5-9118-4637-8643-84a5603db65c?format=jpeg",
+  "https://cdn.cosmos.so/a4b2ea3c-794c-489a-ba76-7771f287e8d8?format=jpeg",
+  "https://cdn.cosmos.so/0d235019-e237-4e5f-a35a-ec21f3316644?format=jpeg",
+  "https://cdn.cosmos.so/1ab09825-f27d-4f2d-a450-dbdf8b78dc54?format=jpeg",
+  "https://cdn.cosmos.so/954981bc-8dbf-4c20-b7b1-1646740f4777?format=jpeg",
+  "https://cdn.cosmos.so/1b3a7ccb-be54-4d14-b58e-f9dae0c8da64?format=jpeg",
+  "https://cdn.cosmos.so/e9d148b1-ff45-4543-a0c0-8a07daac20f9?format=jpeg",
+  "https://cdn.cosmos.so/ca9b4fe5-2d02-47b6-a303-a3b015576aab?format=jpeg",
+  "https://cdn.cosmos.so/152e697c-f5eb-42e8-a5fb-4c04b9f3ba4a?format=jpeg",
+  "https://cdn.cosmos.so/6c605990-8a70-44cf-892b-c00d447fe7f9?format=jpeg",
+  "https://cdn.cosmos.so/94a969f4-030e-4224-987f-a90b38b38a25?format=jpeg",
+  "https://cdn.cosmos.so/cacd6dfa-3fcb-4fb8-bb83-eb54f94ce364?format=jpeg",
+  "https://cdn.cosmos.so/779f786a-5809-4f1e-910f-a29d65807a18?format=jpeg",
+  "https://cdn.cosmos.so/21c1c033-c8e7-4e32-a5e2-d6bc60bafaa8?format=jpeg",
+  "https://cdn.cosmos.so/881243ef-1621-40a8-b81b-0aec9d666caf?format=jpeg",
+  "https://cdn.cosmos.so/ac4ff939-de97-40e8-853e-78daffbbd510?format=jpeg",
+  "https://cdn.cosmos.so/317c697b-02c4-4eb7-845e-78942d41e0a9?format=jpeg",
+];
+
+export const NUMBER_OF_CARDS = 30;

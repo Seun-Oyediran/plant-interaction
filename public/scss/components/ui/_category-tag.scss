@@ -1,0 +1,17 @@
+.app_category_tag {
+  border-radius: 8px;
+  padding: 10px;
+  background: #f7f7f7;
+
+  &__text {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    color: #4f4f4f;
+
+    @include screen("sm") {
+      font-size: 15px;
+    }
+  }
+}

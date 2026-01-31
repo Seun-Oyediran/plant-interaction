@@ -1,0 +1,25 @@
+@import "reset", "typography";
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.txxx_loader {
+  width: 128px;
+  height: 128px;
+  border: 8px solid;
+  border-color: var(--sara-500) transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: txxx_rotation 1s linear infinite;
+}
+
+@keyframes txxx_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

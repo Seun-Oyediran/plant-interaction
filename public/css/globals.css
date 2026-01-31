@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.portal_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.portal_grid > div {
+  height: 250px;
+}
+
+.portal_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+}
+
+.portal_modal > div {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
