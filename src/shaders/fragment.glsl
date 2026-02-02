@@ -19,23 +19,24 @@ float random(vec2 st) {
 
 // vec3 randomFactors = vec3(2.0);
 
-// vec3 randomFactors = vec3(1.0);
+vec3 randomFactors = vec3(1.0);
 
 void main() {
 
 // vec2 uv = floor(vUv * resolution.xy) / resolution.xy;
 
-  // vec2 gridUv = vec2(floor(vUv.x * (randomFactors.x * 10.0)) / (randomFactors.x * 10.0), floor(vUv.y * (randomFactors.y * 10.0)) / (randomFactors.y * 10.0));
-  // vec4 texColor = texture2D(uTexture, gridUv);
-  // float strength = random(gridUv * 1.0 * 1.0);
-  // vec3 noiseColor = vec3(strength);
+  vec2 gridUv = vec2(floor(vUv.x * (randomFactors.x * 10.0)) / (randomFactors.x * 10.0), floor(vUv.y * (randomFactors.y * 10.0)) / (randomFactors.y * 10.0));
+  vec4 texColor = texture2D(uTexture, gridUv);
+
+  float strength = random(gridUv * uTime * 1.0);
+  vec3 noiseColor = vec3(strength);
 
   vec4 tex = texture2D(uTexture, vUv);
 
-  // vec3 finalColor = mix(texColor.rgb, noiseColor, 0.05);
+  vec3 finalColor = mix(texColor.rgb, noiseColor, 0.1);
   // gl_FragColor = vec4(vUv, 1.0, 1.0);
 
-  gl_FragColor = vec4(tex.rgb, 1.0);
+  gl_FragColor = vec4(finalColor, 1.0);
 
       #include <tonemapping_fragment>
 	#include <colorspace_fragment>
