@@ -6,14 +6,14 @@ import { Plant } from "./plant";
 export function Experience() {
   const { pixelSize, isSwapped } = useControls({
     pixelSize: {
-      value: 60,
-      min: 30,
-      max: 200,
+      value: 15,
+      min: 10,
+      max: 30,
       step: 1,
       label: "Pixel Size",
     },
     isSwapped: {
-      value: false,
+      value: true,
       label: "Swap Materials",
     },
   });
