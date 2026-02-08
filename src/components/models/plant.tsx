@@ -27,6 +27,7 @@ export const PlantModel = (props: IProps) => {
   const { shaders = false, pixelSize = 2.5 } = props;
   const { nodes, materials } = useGLTF("/models/plant-transformed.glb") as any;
   const { height, width } = useThree((state) => state.size);
+  const { dpr } = useThree((state) => state.viewport);
 
   const ref = useRef<any>(null);
 
@@ -49,7 +50,7 @@ export const PlantModel = (props: IProps) => {
         <smallPlantMaterial
           ref={ref}
           uTexture={materials.model_Material_u1_v1.map}
-          uResolution={new Vector2(width, height)}
+          uResolution={new Vector2(width * dpr, height * dpr)}
           uPixelSize={pixelSize}
           // wireframe
           stencilWrite={true}
