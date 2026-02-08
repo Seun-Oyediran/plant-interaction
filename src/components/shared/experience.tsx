@@ -6,10 +6,10 @@ import { Plant } from "./plant";
 export function Experience() {
   const { pixelSize, isSwapped } = useControls({
     pixelSize: {
-      value: 2.5,
-      min: 0.5,
-      max: 5,
-      step: 0.1,
+      value: 60,
+      min: 30,
+      max: 200,
+      step: 1,
       label: "Pixel Size",
     },
     isSwapped: {
