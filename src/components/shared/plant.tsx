@@ -14,7 +14,7 @@ export const Plant = (props: IWorldPlant) => {
 
   useFrame((_, delta) => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += delta * 0.75;
+      groupRef.current.rotation.y += delta * 0.5;
     }
   });
 
